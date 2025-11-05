@@ -1,1 +1,43 @@
 /*  your css code here. If applicable */
+/* Base layout just to make the modal visible */
+    body { font-family: Arial, sans-serif; padding: 24px; }
+
+    /* Modal overlay */
+    .modal {
+      display: none;              /* hidden by default */
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal.open { display: flex; } /* shown when .open applied */
+
+    /* Modal content box */
+    .modal-content {
+      background: #fff;
+      width: min(90vw, 480px);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .modal-header, .modal-body { padding: 16px 20px; }
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+    .modal-header h2 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .close-modal {
+      border: none;
+      background: transparent;
+      font-size: 1.25rem;
+      cursor: pointer;
+      line-height: 1;
+    }
