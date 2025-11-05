@@ -4,7 +4,7 @@
 
     /* Modal overlay */
     .modal {
-      display: none;              /* hidden by default */
+      display: block;              /* hidden by default */
       position: fixed;
       inset: 0;
       background: rgba(0,0,0,0.5);
